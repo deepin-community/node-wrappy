@@ -1,0 +1,27 @@
+Source: node-wrappy
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Thorsten Alteholz <debian@alteholz.de>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-tap <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-wrappy
+Vcs-Git: https://salsa.debian.org/js-team/node-wrappy.git
+Homepage: https://github.com/npm/wrappy
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-wrappy
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: Callback wrapping utility
+ Returns a wrapper function that returns a wrapped callback
+ The wrapper function should do some stuff, and return a
+ presumably different callback function.
+ This makes sure that own properties are retained, so that
+ decorations and such are not lost along the way.
+ .
+ Node.js is an event-based server-side JavaScript engine.
