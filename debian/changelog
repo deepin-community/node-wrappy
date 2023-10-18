@@ -1,3 +1,10 @@
+node-wrappy (1.0.2-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix test for tap >= 15 (--no-cov) (Closes: #1009495)
+
+ -- Yadd <yadd@debian.org>  Wed, 13 Apr 2022 16:30:52 +0200
+
 node-wrappy (1.0.2-2) unstable; urgency=medium
 
   * Team upload
